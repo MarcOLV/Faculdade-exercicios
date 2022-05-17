@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <p>
+            Crie um arquivo HTML que contenha um formulário conforme exemplo abaixo:
+            Neste mesmo arquivo crie uma função JavaScript que calcule o imposto de renda a partir do salário informado,
+            respeitando a faixa salarial conforme apresentado na tabela. Depois, coloque o resultado do cálculo na caixa
+            de texto correspondente ao IR.
+        </p>
+        <table>
+            <tr>
+                <th>Faixa salarial</th>
+                <th>Alíquota</th>
+            </tr>
+            <tr>
+                <td>Até R$ 1.434</td>
+                <td> 0% (isento) </td> 
+            </tr> 
+            <tr>
+                <td>De R$ 1.434 a R$ 2.150</td>
+                <td>7,5%</td>
+            </tr>
+            <tr>
+                <td>De R$ 2.150 a R$ 2.866</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>De R$ 2.866 a R$ 3.582</td>
+                <td>22,5%</td>
+            </tr>
+            <tr>
+                <td>Acima de R$ 3.582</td>
+                <td>27,5%</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h1>Cálculo do Imposto de renda</h1>
+        <form>
+            Registro:
+            <input type="text" id="txtreg">
+            <br> Nome:
+            <input type="text" id="txtnome">
+            <br> Salário:
+            <input type="text" id="txtsalario">
+            <br>
+            <button type="button" id="botao">Calcular IR</button>
+            <br>
+            Imposto de renda:
+            <input type="text" id="txtimposto" readonly>
+        </form>
+
+    </main>
+    <script src="js/exercicio8.js"></script>
+
+</body>
+
+</html>

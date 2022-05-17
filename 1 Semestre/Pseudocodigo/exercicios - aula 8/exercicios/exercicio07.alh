@@ -1,0 +1,24 @@
+algoritmo exercicio07
+	inteiro i, interesse
+	caractere resposta, f, sexo
+    início
+	interesse = 0
+	f=0
+	para(i = 0; i <= 200; i++){
+		 escreva("Oque voce achou do produto ")
+		leia(resposta)
+		escreva("Digite seu sexo, F ou M")
+		leia(sexo)
+		se(resposta == "sim"){
+		interesse++
+		}
+		se(sexo == "F" ou sexo == "f" e resposta == "não")
+		f++
+	}
+	
+	escreva("A quantidade de pessoas que disseram sim foi de " + interesse)
+	escreva("o percentual de mulheres que responderam não foi de  " + f)
+
+
+    fim
+    

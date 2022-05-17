@@ -1,0 +1,22 @@
+algoritmo exemplo_enquanto
+    real dist, tempo
+    caractere resp
+    início
+        resp = 's'
+        enquanto(resp == 's' ou resp == 'S'){​
+            escreva("Digite a distância percorrida pelo móvel (em km) ")
+            leia(dist)
+            escreva("Digite o tempo gasto em horas: ")
+            leia(tempo)
+            escreva("Velocidade = " + calculaVelocidade(dist, tempo))
+            escreva("Deseja continuar? S/N")
+            leia(resp)
+        }​    
+    fim
+real calculaVelocidade(real dist, real tempo)
+    retorne(dist/tempo)
+    fim
+    
+    
+  
+  

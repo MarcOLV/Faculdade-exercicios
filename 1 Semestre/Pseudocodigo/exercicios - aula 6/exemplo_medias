@@ -1,0 +1,29 @@
+algoritmo medias 
+    real nota1, nota2
+    caracter tipoDeMedia
+    inicio 
+        escreva("Vamos calcular uma média.")
+        escreva("Informe o tipo de média")
+        escreva("A - Média aritmética")
+        escreva("P - Média ponderada")
+        leia(tipoDeMedia)
+        escreva("Informe sua primeira nota: ")
+        leia(nota1)
+        escreva("Informe sua segunda nota: ")
+        leia(nota2)
+        calculaMedia(nota1, nota2, tipoDeMedia)
+    fim 
+void calculaMedia(real nota1, real nota2, caracter tipoDeMedia) {
+    real media
+    escolha( tipoDeMedia ) {
+        caso 'A': 
+            media = (nota1 + nota2) / 2
+            escreva("SUA MÉDIA ARITMÉTICA: " + media)
+            pare
+        caso 'P':
+            media = (nota1 * 3 + nota2 * 7) / 10
+            escreva("SUA MÉDIA ARITMÉTICA: " + media)
+            pare
+        padrao:    
+            escreva("Não trabalhamos com esse tipo de média")
+}

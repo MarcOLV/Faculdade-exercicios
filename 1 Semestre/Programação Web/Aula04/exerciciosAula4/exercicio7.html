@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <p>
+            Fazer uma página HTML que leia a altura, o peso e o sexo de uma pessoa por meio de um formulário e mostre na página o IMC (Índice de Massa Corporal) da pessoa e a categoria na qual se enquadra segundo a OMS (Organização Mundial de Saúde). Cada informação deve ser apresentada em uma linha e a formatação da fonte utilizando classe CSS deve seguir a seguinte regra: - fonte Arial, azul, 24pt.
+
+            A fórmula para o cálculo do IMC é dada por: IMC = peso / (altura * altura)
+            A tabela a seguir mostra as faixas para homens e mulheres.
+        </p>
+        <table>
+            <tr>
+                <th>Condição</th>
+                <th>IMC em Mulheres</th>
+                <th>IMC em Homens</th>
+            </tr>
+            <tr>
+                <td>abaixo do peso</td>
+                <td>< 19,1</td>
+                <td>< 20,7</td>
+            </tr>
+            <tr>
+                <td>no peso normal</td>
+                <td>19,1 - 25,8</td>
+                <td>20,7 - 26,4</td>
+            </tr>
+            <tr>
+                <td>marginalmente acima do peso</td>
+                <td>25,8 - 27,3</td>
+                <td>26,4 - 27,8</td>
+            </tr>
+            <tr>
+                <td>acima do peso ideal</td>
+                <td>27,3 - 32,3</td>
+                <td>27,8 - 31,1</td>
+            </tr>
+            <tr>
+                <td>Obeso</td>
+                <td> > 32,3</td>
+                <td> > 31,1</td>
+            </tr>
+        </table>
+        <hr>
+
+        <form>
+            Altura:<input type="text" id="txtaltura"><br>
+            Peso:<input type="text" id="txtpeso"><br>
+            Sexo:<br>
+            <input type="radio" value="masculino" id="sexM" name="sexo">Masculino <br>
+            <input type="radio" value="feminino" id="sexF" name="sexo">Feminino<br>
+            Seu IMC é : <input type="text" id="txtimc" readonly><br>
+            Sua condição : <input type="text" id="txtcondicao" readonly><br>
+            <button type="button" id="botao">Calcular</button> 
+        </form>
+
+    </main>
+    <script src="js/exercicio7.js"></script>
+
+</body>
+
+</html>

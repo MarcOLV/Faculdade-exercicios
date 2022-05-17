@@ -1,0 +1,19 @@
+algoritmo exemplo_aula03Ex05
+    real dist, tempo
+    inteiro i
+    início
+        para(i=1; i <= 3; i++){​
+            escreva("Digite a distância percorrida pelo móvel (em km) ")
+            leia(dist)
+            escreva("Digite o tempo gasto em horas: ")
+            leia(tempo)
+            escreva("Velocidade = " + calculaVelocidade(dist, tempo))
+        }​
+    fim
+real calculaVelocidade(real dist, real tempo)
+    retorne(dist/tempo)
+    fim
+    
+    
+  
+  
