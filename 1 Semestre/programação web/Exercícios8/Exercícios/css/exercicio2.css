@@ -1,0 +1,20 @@
+main{
+    width: 500px;
+    margin: auto;
+}
+
+.red {
+    color: #f00;
+    font-weight: bold;
+}
+
+.blue {
+    color: #00f;
+    font-weight: bold;
+}
+
+.orange {
+    color: #f29d03;
+    font-weight: bold;
+}
+

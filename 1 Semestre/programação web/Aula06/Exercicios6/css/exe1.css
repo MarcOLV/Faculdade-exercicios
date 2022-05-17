@@ -1,0 +1,11 @@
+.aprovado{
+    color: #00f;
+}
+
+.reprovado{
+    color: #f00;
+}
+
+.exame{
+    color: rgb(248, 133, 25);
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+  <title>form2</title>
+</head>
+<body>
+
+    <form method="POST" 
+    action="http://aplicacoesparainternet.siteoficial.ws/validaDados.php">
+
+        RGM: <input type="text" name="rgm" required><br>
+        Ano nascimento <input type="text" name="ano" required pattern="[0-9]{4}"><br>
+        Peso <input type="text" name="peso" required pattern="[0-9]+[.][0-9]" maxlength="5"><br>
+        Altura <input type="text" name="altura" required pattern="[0-9]+[.][0-9]" maxlength="5"><br>
+        Curso: <br>
+        <select name="curso" required>
+            <option hidden>Selecioen um Curso</option>
+            <optgroup label="Analia Franco">
+                <option value="AF_ADS">AF - ADS</option>
+                <option value="AF_CCP">AF - CCP</option>
+            </optgroup>
+            <optgroup label="São Miguel">
+                <option value="SM_ADS">AF - ADS</option>
+                <option value="SM_CCP">AF - CCP</option>
+            </optgroup>
+        </select>
+        <br>
+        <button type="submit">Enviar</button>
+
+    </form>
+
+
+</body>
+</html>

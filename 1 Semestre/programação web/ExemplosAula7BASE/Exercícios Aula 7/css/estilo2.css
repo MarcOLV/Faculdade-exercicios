@@ -1,0 +1,31 @@
+form{
+    width: 500px;
+    margin: auto;
+}
+
+#resultado{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: center;
+}
+
+img{
+    float: left;
+    display: block;
+    width: 150px;
+    margin-right: 10px;
+}
+
+div{
+    height: 200px;
+}
+
+article{
+    width: 500px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 1px 1px 10px #000;
+    border-radius: 10px;
+}

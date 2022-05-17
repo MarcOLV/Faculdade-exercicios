@@ -1,0 +1,8 @@
+#lista{
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+p{
+    margin: 30px;
+}

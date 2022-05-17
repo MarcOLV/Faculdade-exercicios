@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <p>
+            Criar um script que solicite ao usuário o valor total da compra e a quantidade de parcelas a financiar e o
+            sistema deve visualizar o valor de cada parcela de acordo com os juros da tabela abaixo. Utilize campos de
+            texto para ler os valores e dar a resposta ao usuário:
+        </p>
+        <table>
+            <tr>
+                <th>Nº de parcelas</th>
+                <th>% de juros</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>7</td>
+            </tr>
+        </table>
+        <hr>
+
+        <form>
+            Valor da compra:<br>
+            <input type="text" id="txtvalor"><br>
+            Parcelas:<br>
+            <select id="txtparcelas">
+                <option value="" hidden>Selecione a qtd de parcelas</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+            </select>
+            <br>
+            Valor das parcelas:<br>
+            <input type="text" id="txtresult" readonly><br>
+            <button type="button" id="botao">Calcular</button>
+        </form>
+    </main>
+    <script src="js/exercicio1.js"></script>
+
+</body>
+
+</html>

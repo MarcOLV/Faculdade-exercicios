@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <p>
+            Elabore um script que leia o valor (preço) de um produto e a condição de pagamento conforme tabela abaixo.
+            Exiba ao final do script, o valor real do produto e o valor a ser pago (conforme tabela), leia os valores
+            por meio de um formulário e mostre as mensagens em campos de texto do form ou tags html.
+        </p>
+        <table>
+            <tr>
+                <th>Código</th>
+                <th>Condições de pagamento</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>À vista 10% de desconto</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Cartão 5% de desconto</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Parcelado 10% de aumento</td>
+            </tr>
+        </table>
+        <hr>
+
+        <form>
+            Valor do produto:<br>
+            <input type="text" id="txtvalor"><br>
+
+            Forma de pagamento:<br>
+            <select id="txtpagamento">
+                <option value="" hidden>Escolha uma opção</option>
+                <option value="1">À vista 10% de desconto</option>
+                <option value="2">Cartão 5% de desconto</option>
+                <option value="3">Parcelado 10% de aumento</option>
+            </select>
+            <br>
+
+            Valor real do produto:<input type="text" id="txtreal" readonly><br>
+            Valor total a pagar:<input type="text" id="txtpagar" readonly><br>
+
+            <button type="button" id="botao">Calcular</button>
+        </form>
+
+
+    </main>
+    <script src="js/exercicio6.js"></script>
+
+</body>
+
+</html>

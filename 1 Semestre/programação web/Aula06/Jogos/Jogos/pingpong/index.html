@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Ping Pong</title>
+	<style>
+		#playground{
+			background-image:url(Mesa.png);
+			width: 620px;
+			height: 328px;
+			position: relative;
+			overflow: hidden;
+		}
+		#ball {
+			background-image:url(bola.png);		
+			position: absolute;
+			width: 30px;
+			height: 27px;
+			left: 150px;
+			top: 100px;
+			border-radius: 10px;
+		}
+		.paddle {
+			background: #bbf;
+			left: 30px;
+			top: 70px;
+			position: absolute;
+			width: 30px;
+			height: 70px;
+			text-align:center;
+			line-height:70px;
+		}
+		#paddleB {
+			left: 560px;
+		}	
+	</style>	
+</head>
+<body>
+	<header>
+			<h1>Ping Pong</h1>
+	</header>
+	<div id="game">
+		<div id="scoreboard">
+			<div class="score">Pontos do Jogador A : <span id="scoreA">0</span></div>
+			<div class="score">Pontos do Jogador B : <span id="scoreB">0</span></div>
+		</div>
+		<div id="playground">
+			<div id="paddleA" class="paddle">A</div>
+			<div id="paddleB" class="paddle">B</div>
+			<div id="ball"></div>
+		</div>
+		<div id="spectators"></div>
+	</div>
+	
+	
+	<script src="js/jquery-1.4.3.js"></script>	
+	<script src="js/html5games.pingpong.js"></script>
+    <audio src="Ping Pong .mp3" id="som" />
+</body>
+</html>

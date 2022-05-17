@@ -1,0 +1,10 @@
+.caixa{
+    width: 300px;
+    height: 100px;
+    border: 5px solid #000;
+    cursor: pointer;
+}
+
+#personagem{
+    position: absolute;
+}
