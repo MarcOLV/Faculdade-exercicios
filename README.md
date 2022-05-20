@@ -1,5 +1,6 @@
 <h1 align="center"> Faculdade-exercicios 🚀</h1>
-Exercicios CCP - Projetos e exercícios realizados nas aulas do curso de Ciências da Computação.
+<h3 align="center"> Exercicios CCP - Projetos e exercícios realizados nas aulas do curso de Ciências da Computação. </h3>
+
 
 CCP:💻
     2 Semestre:
