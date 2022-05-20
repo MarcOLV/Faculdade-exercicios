@@ -1,0 +1,99 @@
+public class exercicio02 {
+
+    public static void main(String[] args) {
+        new exercicio02();
+    }
+    
+    public exercicio02() {
+        int vetnulo[] = null;
+        
+        if (!selectionSort_v01(vetnulo) ) {
+           System.out.println("O vetor nulo 'vetnulo' não pode ser ordenado em selectionSort_v01."); 
+        }
+        
+        try {
+          selectionSort_v02(vetnulo);
+        }
+        catch(Exception ex ){
+          System.out.println("O vetor nulo 'vetnulo' não pode ser ordenado em selectionSort_v02.\n");  
+        }
+        
+        //declaramos um vetor:
+        int vet[] = {4,2,10,123,-3,32,0,34,12,91,45,3,21,87,61};
+        
+        System.out.println("Vetor desordenado:");
+        visualizar(vet);
+        
+        selectionSort_v03(vet); 
+        
+        //ou chamar a selectionSort_v02:
+        /*
+        try {
+          selectionSort_v02(vet);
+        }
+        catch(Exception ex ){
+          System.out.println("vet não pode ser ordenado em selectionSort_v02...\n");  
+        }
+        */
+        
+        System.out.println("Vetor ordenado:");
+        visualizar(vet);
+    }
+    
+    public boolean selectionSort_v01(int vetor []) {
+        if (vetor == null) return false;   
+        for (int i = 0; i < vetor.length - 1; i++) {
+            int min = i;
+            for (int j = i+1; j < vetor.length; j++) {
+                if ( vetor[j] < vetor[min] ) min = j;
+            }
+            int temp = vetor[i];
+            vetor[i] = vetor[min];
+            vetor[min] = temp;
+        }
+        return true;
+    }
+    
+    public void selectionSort_v02(int vetor []) throws Exception {
+        if (vetor == null) throw new Exception();     
+        for (int i = 0; i < vetor.length - 1; i++) {
+            //determina a posição min do menor valor encontrado  
+            //entre as posições i+1 e vetor.length
+            int min = i;
+            for (int j = i+1 ; j < vetor.length; j++) {
+                if ( vetor[j] < vetor[min] ) min = j;
+            }
+            //troca os valores do vetor:
+            int temp = vetor[i];
+            vetor[i] = vetor[min];
+            vetor[min] = temp;
+        }
+    }
+    
+    public boolean selectionSort_v03(int vetor []) {
+        if (vetor == null) return false;   
+        for (int i = 0; i < vetor.length - 1; i++) {
+            int min = i; 
+            int menor = vetor[i];
+            for (int j = i+1; j < vetor.length; j++) {
+                if ( vetor[j] > menor ) {
+                    min = j;
+                    menor = vetor[j];
+                }
+            }
+            //troca os valores vetor[i] com vetor[min]:
+            int temp = vetor[i];
+            vetor[i] = menor;
+            vetor[min] = temp;
+        }
+        return true;
+    }
+
+    public void visualizar(int vetor[]) {
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.print(vetor[i] + "   ");
+        }
+        System.out.println();
+    }
+    
+}

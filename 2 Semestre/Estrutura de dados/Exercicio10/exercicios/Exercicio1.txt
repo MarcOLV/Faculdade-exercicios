@@ -1,0 +1,10 @@
+Queue F = [ "livro", "caneta", "borracha" ]
+Object ob = F.dequeue()
+F.enqueue("clip")
+F.enqueue(F.peek())
+F.enqueue(ob)
+
+Resultado
+F:  [ livro, caneta, borracha ]
+Retirado: livro
+F:  [ caneta, borracha, clip, caneta ]
